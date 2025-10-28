@@ -26,7 +26,8 @@ jobs:
 
       - name: 🌐 Build Expo Web version
         run: |
-          npx expo export:web
+          npx expo export --platform web
+
 
       - name: 📤 Upload Web build as artifact
         uses: actions/upload-artifact@v4
